@@ -12,9 +12,11 @@ class OnboardingContents {
 
 List<OnboardingContents> contents = [
   OnboardingContents(
+
     title: "Your safety , Our priority",
     image: "assets/safescapelogo.png",
     desc: "Notify your Safety with a single tap.",
+
   ),
   // OnboardingContents(
   //   title: "Personalized Conversational AI Assistant",
@@ -29,15 +31,17 @@ List<OnboardingContents> contents = [
         "Share immediate alerts and your live location with loved ones effortlessly.",
   ),
   OnboardingContents(
+
     title: "Shake Sensing Technology",
     image: "assets/shakeme.png",
     desc: "Stay protected with Safescape's shake-based alert detection system.",
-  ),
+
+),
   OnboardingContents(
     title: "Help at your fingertips",
     image: "assets/safewomen.png",
-    desc:
-        "With Safescape, help is always within your reach, ready to be accessed with a simple touch.",
+    desc: "With Safescape, help is always within your reach, ready to be accessed with a simple touch.",
+
   ),
   OnboardingContents(
     title: "Automated Location Updates",
@@ -48,8 +52,7 @@ List<OnboardingContents> contents = [
   OnboardingContents(
     title: "Spy Camera Detector",
     image: "assets/spying.png",
-    desc:
-        "Defend your personal space with Safescape's spy camera detection using cutting-edge sensors.",
+    desc: "Defend your personal space with Safescape's spy camera detection using cutting-edge sensors.",
   ),
   OnboardingContents(
     title: "Connected for Safer Journeys",
