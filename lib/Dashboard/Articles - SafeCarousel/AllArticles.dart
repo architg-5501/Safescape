@@ -108,7 +108,7 @@ class _AllArticlesState extends State<AllArticles>
                                       context,
                                       SafeWebView(
                                           index: index,
-                                          title: "You are strong",
+                                          title: "You are weak and ugly",
                                           url:
                                               "https://www.healthline.com/health/womens-health/self-defense-tips-escape"));
                                 }

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:safescape/Dashboard/Dashboard.dart';
 import 'package:safescape/Onboarding/onboarding_contents.dart';
@@ -154,6 +153,7 @@ class _OnboardingState extends State<Onboarding> {
                               TextButton(
                                 onPressed: () {
                                   _controller.jumpToPage(7);
+
                                 },
                                 child: const Text(
                                   "SKIP",

@@ -52,7 +52,7 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return  GetMaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Safescape',
       theme: ThemeData(
@@ -65,8 +65,8 @@ class MyApp extends StatelessWidget {
             if (snap.hasData) {
               if (snap.data) {
                 // return LiveFeed(cameras);
-                return Dashboard();
                 // return Onboarding();
+                return Dashboard();
               } else {
                 // Future.delayed(Duration.zero, () => showLocAlert(context));
                 return Onboarding();

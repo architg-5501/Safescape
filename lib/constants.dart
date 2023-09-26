@@ -1,16 +1,15 @@
 List<List<String>> sweetSayings = [
-  ["Your presence,", "lights up the whole room"],
-  ["We admire", "Your strong personality."],
-  ["We’ll help you", "In any way we can,"],
-  ["You are Strong", "and courageous"]
+  ["Your smile,", "Lights up my world"],
+  ["We cherish", "Your inner strength."],
+  ["We've got you", "Every step of the way,"],
+  ["You embody,", "Courage and grace."]
 ];
 
-
 List<String> articleTitle = [
-  "Indian women are inspiring country",
-  "We have to end Violence",
-  "Be a change",
-  "You are strong"
+  "Indian women: Role models for the nation",
+  "Together, we can end violence",
+  "Become the change you wish to see",
+  "You are stronger than you believe"
 ];
 List<String> imageSliders = [
   "https://www.yourtango.com/sites/default/files/styles/header_slider/public/image_blog/songs-about-strong-women.jpg?itok=nmfiF3J3",
