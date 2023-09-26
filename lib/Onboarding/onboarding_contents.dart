@@ -15,7 +15,7 @@ List<OnboardingContents> contents = [
   OnboardingContents(
     title: "Too Fear to walk alone?",
     image: "assets/1.png",
-    desc: "Let's help you!\nUse GoSecure's great features to ensure your personal safety",
+    desc: "Let's help you!\nUse Safescape's great features to ensure your personal safety",
   ),
   OnboardingContents(
     title: "Personalized Conversational AI Assistant",
@@ -33,13 +33,13 @@ List<OnboardingContents> contents = [
     title: "Shake detector",
     image: "assets/shake.png",
     desc:
-    "GoSecure detects shake frequency to send alerts",
+    "Safescape detects shake frequency to send alerts",
   ),
   OnboardingContents(
     title: "Help at your fingertips",
     image: "assets/women.png",
     desc:
-    "GoSecure instantly connects you with the concerned authorities",
+    "Safescape instantly connects you with the concerned authorities",
   ),
   OnboardingContents(
     title: "Periodic Location Updates",
@@ -51,7 +51,7 @@ List<OnboardingContents> contents = [
     title: "Spy Camera Detector",
     image: "assets/spy.png",
     desc:
-    "GoSecure uses magnetometers and gyroscopes sensors to detect spy camera",
+    "Safescape uses magnetometers and gyroscopes sensors to detect spy camera",
   ),
   OnboardingContents(
     title: "Personal Safety at your Fingertips",

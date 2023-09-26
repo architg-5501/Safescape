@@ -249,14 +249,14 @@ class _HomeState extends State<Home> {
                           // color: Colors.orange,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
+                            children: const [
                               Icon(
                                 Icons.arrow_left,
                                 size: 37,
                                 color: Colors.white,
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(right: 42.0),
+                                padding: EdgeInsets.only(right: 42.0),
                                 child: Text(
                                   "Danger Siren",
                                   style: TextStyle(
@@ -279,9 +279,9 @@ class _HomeState extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
-                      children: [
+                      children: const [
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(8.0),
                           child: Text(
                             "Emergency",
                             style: TextStyle(
@@ -293,7 +293,7 @@ class _HomeState extends State<Home> {
                   ],
                 ),
               ),
-              Emergency(),
+              const Emergency(),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Row(
@@ -315,78 +315,16 @@ class _HomeState extends State<Home> {
                 ),
               ),
               OtherFeature(),
-              // SizedBox(
-              //   height: MediaQuery.of(context).size.height/6,
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //     children: [
-              //       GestureDetector(
-              //         onTap: (){
-              //           Navigator.of(context).push(MaterialPageRoute(builder: (context) => Fake()));
-              //         },
-              //         child: AvatarGlow(
-              //           glowColor: Colors.blue,
-              //           endRadius: 90.0,
-              //           duration: Duration(milliseconds: 2000),
-              //           repeat: true,
-              //           showTwoGlows: true,
-              //           repeatPauseDuration: Duration(milliseconds: 100),
-              //           child: Material(     // Replace this child with your own
-              //             elevation: 8.0,
-              //             shape: CircleBorder(),
-              //             child: CircleAvatar(
-              //               backgroundColor: Colors.blueAccent[100],
-              //               child: Image.asset(
-              //                 'assets/call.png',
-              //                 height: 60,
-              //               ),
-              //               radius: 40.0,
-              //             ),
-              //           ),
-              //         ),
-              //       ),
-              //       Expanded(
-              //         child: Container(
-              //             padding: EdgeInsets.all(10),
-              //             margin: EdgeInsets.only(left: 0),
-              //             height: 60,
-              //             decoration: BoxDecoration(
-              //               borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomLeft: Radius.circular(20)),
-              //               gradient: LinearGradient(
-              //                 begin: Alignment.topLeft,
-              //                 end: Alignment.bottomRight,
-              //                 colors: [
-              //                   Color(0xFFFD8080),
-              //                   Color(0xFFFB8580),
-              //                   Color(0xFFFBD079),
-              //                 ],
-              //               ),
-              //             ),
-              //             width: MediaQuery.of(context).size.width/1.8,
-              //             // color: Colors.orange,
-              //             child: Row(
-              //               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //               children: [
-              //                 Icon(Icons.arrow_left,size: 37,color: Colors.white,),
-              //                 Padding(
-              //                   padding: const EdgeInsets.only(right: 42.0),
-              //                   child: Text("Fake Call",style: TextStyle(color: Colors.white,fontSize: 17,fontWeight: FontWeight.bold,),textAlign: TextAlign.right,),
-              //                 ),
-              //               ],
-              //             )
-              //         ),
-              //       ),
-              //     ],
-              //   ),
-              // ),
-              Padding(
-                padding: const EdgeInsets.only(left: 16.0, bottom: 10, top: 10),
+           
+              const Padding(
+                padding: EdgeInsets.only(left: 16.0, bottom: 10, top: 10),
                 child: Text(
                   "Book Cab",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
               ),
-              BookCab(),
+
+              const BookCab(),
 
               Padding(
                 padding: const EdgeInsets.only(left: 16.0, bottom: 10, top: 10),
@@ -435,67 +373,7 @@ class _HomeState extends State<Home> {
         }).show(context);
   }
 
-  // void showAlert(BuildContext context) {
-  //   showDialog(
-  //       // barrierColor: Colors.red,
-  //       context: context,
-  //       builder: (context) => AlertDialog(
-  //             shape: RoundedRectangleBorder(
-  //                 borderRadius: BorderRadius.all(Radius.circular(32.0))),
-  //             title: Row(
-  //               mainAxisAlignment: MainAxisAlignment.center,
-  //               children: [
-  //                 GlowText("Battery Alert",
-  //                     style: TextStyle(
-  //                         fontSize: 22,
-  //                         color: Colors.white,
-  //                         fontWeight: FontWeight.w800),
-  //                     textAlign: TextAlign.center,
-  //                     glowColor: Colors.blue),
-  //                 Icon(
-  //                   Icons.battery_alert_rounded,
-  //                   size: 34,
-  //                   color: Colors.white,
-  //                 )
-  //               ],
-  //             ),
-  //             backgroundColor: Colors.red,
-  //             content: SizedBox(
-  //               height: MediaQuery.of(context).size.height / 7.5,
-  //               child: Column(
-  //                 children: [
-  //                   Padding(
-  //                     padding: const EdgeInsets.all(8.0),
-  //                     child: Text("Charge your phone now!!",
-  //                         style: TextStyle(
-  //                             fontWeight: FontWeight.bold,
-  //                             color: Colors.white,
-  //                             fontSize: 18),
-  //                         textAlign: TextAlign.start),
-  //                   ),
-  //                   SizedBox(
-  //                     height: 32,
-  //                   ),
-  //                   Row(
-  //                     children: [
-  //                       Text("We need power to secure you",
-  //                           style: TextStyle(
-  //                               fontWeight: FontWeight.bold,
-  //                               color: Colors.white,
-  //                               fontSize: 16),
-  //                           textAlign: TextAlign.center),
-  //                       Icon(
-  //                         Icons.admin_panel_settings,
-  //                         size: 32,
-  //                         color: Colors.white,
-  //                       )
-  //                     ],
-  //                   ),
-  //                 ],
-  //               ),
-  //             ),
-  //           ));
-  // }
+
   openMap(String location) async {
     String googleUrl =
         'https://www.google.com/maps/search/?api=1&query=$location';
