@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:safescape/Dashboard/ContactScreens/phonebook_view.dart';
 import 'package:safescape/Dashboard/DashWidgets/Scream.dart';
+import 'package:safescape/Dashboard/DashWidgets/safePath.dart';
 import 'package:safescape/Dashboard/Dashboard.dart';
 import 'package:safescape/Dashboard/Settings/SettingsScreen.dart';
 import 'package:safescape/Fake%20call/fake.dart';
@@ -161,10 +162,10 @@ class _HomeState extends State<Home> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        DashAppbar(
-          getRandomInt: getRandomInt,
-          quoteIndex: quoteIndex,
-        ),
+        // DashAppbar(
+        //   getRandomInt: getRandomInt,
+        //   quoteIndex: quoteIndex,
+        // ),
         Expanded(
           child: ListView(
             shrinkWrap: true,
@@ -396,6 +397,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               LiveSafe(),
+              Safepath(),
               Padding(
                 padding: const EdgeInsets.only(left: 16.0, bottom: 10, top: 10),
                 child: Text(
