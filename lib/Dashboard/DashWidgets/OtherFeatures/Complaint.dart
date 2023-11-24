@@ -7,7 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 class Complaint extends StatelessWidget {
   const Complaint({Key key}) : super(key: key);
 
-  _launch () async{
+  _launch() async {
     launch("https://ncwapps.nic.in/onlinecomplaintsv2/frmInstructions.aspx");
   }
 
@@ -28,25 +28,26 @@ class Complaint extends StatelessWidget {
             height: 180,
             width: MediaQuery.of(context).size.width * 0.7,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(20),
                 gradient: LinearGradient(
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
-                    colors: [Colors.purple, Colors.blue])
-            ),
+                    colors: [Colors.purple, Colors.blue])),
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CircleAvatar(
-                      backgroundColor: Colors.white.withOpacity(0.5),
-                      radius: 25,
-                      child: Center(
-                          child: Image.asset(
-                        "assets/indian.png",
-                        height: 35,
-                      ))),
+                  Center(
+                    child: CircleAvatar(
+                        // backgroundColor: Colors.white.withOpacity(0.5),
+                        radius: 25,
+                        child: Center(
+                            child: Image.asset(
+                          "assets/complain.png",
+                          height: 35,
+                        ))),
+                  ),
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,

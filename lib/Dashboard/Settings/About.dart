@@ -45,41 +45,23 @@ class AboutUs extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          AboutCard(
-            asset: "GoSecure-logos",
-            desc:
-                """Safescape is a vigilant mobile application that enables the user to stay connected with the ones who care! It gives the user an option to share live location to concerned people through SOS alerts and enables the user to access emergency services. Be a witness of the unfortunate occurring incident and call for help. It is your personal companion.""",
-            subtitle: "You Deserve to be safe!",
-            title: "Safescape",
-            sizeFactor: 1.8,
+          Padding(
+            padding: const EdgeInsets.all(4.0),
+            child: AboutCard(
+              asset: "safescape",
+              desc:
+                  """Safescape is a vigilant mobile application that enables the user to stay connected with the ones who care! It gives the user an option to share live location to concerned people through SOS alerts and enables the user to access emergency services. Be a witness of the unfortunate occurring incident and call for help. It is your personal companion.""",
+              subtitle: "You Deserve to be safe!",
+              title: "Safescape",
+              sizeFactor: 1.8,
+            ),
           ),
           AboutCard(
-            desc:
-                "Archit Gupta \n Rohit Saini \n Sahil Jaiman",
+            desc: "Archit Gupta \n Rohit Saini \n Sahil Jaiman",
             asset: "about",
             subtitle: "Made with ❤ for Her!",
             title: "Safescape Team",
             sizeFactor: 2.5,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15)),
-              elevation: 5,
-              child: ListTile(
-                  onTap: () {
-                    showLicences(context);
-                  },
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.grey[100],
-                    child: Center(
-                      child: Image.asset("assets/card.png", height: 30),
-                    ),
-                  ),
-                  trailing: Icon(Icons.arrow_forward_ios_rounded),
-                  title: Text("Licences")),
-            ),
           ),
           SizedBox(
             height: 50,
@@ -92,7 +74,7 @@ class AboutUs extends StatelessWidget {
                   endIndent: 10,
                 ),
               ),
-              Text("© 2022 Divij Katyal, All rights reserved."),
+              Text("© 2023 All rights reserved."),
               Expanded(
                 child: Divider(
                   indent: 10,

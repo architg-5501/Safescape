@@ -235,12 +235,15 @@ class _ScreamState extends State<Scream> {
                     ],
                   ),
                 ),
-                ClipRRect(
-                    borderRadius: BorderRadius.circular(20),
-                    child: Image.asset(
-                      "assets/scream.png",
-                      height: 140,
-                    ))
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                        "assets/scream.jpg",
+                        height: 140,
+                      )),
+                )
               ],
             ),
           ),

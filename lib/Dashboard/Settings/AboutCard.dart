@@ -19,7 +19,7 @@ class AboutCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 20,left: 20,right:20),
+      margin: EdgeInsets.only(bottom: 20, left: 20, right: 20),
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height / sizeFactor,
       child: Stack(
@@ -39,15 +39,17 @@ class AboutCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 20.0),
-                      child: CircleAvatar(
-                        radius: 50,
-                        backgroundColor: Colors.grey[200],
-                        child: Center(
-                            child: Image.asset(
-                              "assets/$asset.png",
-                              fit: BoxFit.cover,
-                            )),
+                      padding: const EdgeInsets.only(left: 20.0, top: 10),
+                      child: Center(
+                        child: CircleAvatar(
+                          radius: 50,
+                          backgroundColor: Colors.grey[200],
+                          child: Center(
+                              child: Image.asset(
+                            "assets/$asset.png",
+                            fit: BoxFit.cover,
+                          )),
+                        ),
                       ),
                     ),
                     // SizedBox(

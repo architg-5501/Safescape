@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
-import 'package:safescape/HiddenCamera/detection.dart';
+import 'package:safescape/sigerSound/detection.dart';
 
 import '../../../main.dart';
 
@@ -33,32 +33,34 @@ class CameraDetection extends StatelessWidget {
                     end: Alignment.centerRight,
                     colors: [Colors.purple, Colors.blue])),
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CircleAvatar(
-                      backgroundColor: Colors.white.withOpacity(0.5),
-                      radius: 25,
-                      child: Center(
-                          child: Image.asset(
-                        "assets/camera.png",
-                        height: 35,
-                      ))),
+                  Center(
+                    child: CircleAvatar(
+                        // backgroundColor: Colors.white.withOpacity(0.5),
+                        radius: 25,
+                        child: Center(
+                            child: Image.asset(
+                          "assets/alerty.png",
+                          height: 35,
+                        ))),
+                  ),
                   Expanded(
                       child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Spy Camera Detection",
+                        "Danger Siren",
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: MediaQuery.of(context).size.width * 0.06),
                       ),
                       Text(
-                        "Live feed using magnetometer",
+                        "Siren Roars, Safety Restored",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: MediaQuery.of(context).size.width * 0.035,

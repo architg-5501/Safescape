@@ -26,7 +26,7 @@ class MetroEmergency extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Color(0xFFFD8080),
+                  Color.fromARGB(255, 236, 104, 104),
                   Color(0xFFFB8580),
                   Color(0xFFFBD079),
                 ],

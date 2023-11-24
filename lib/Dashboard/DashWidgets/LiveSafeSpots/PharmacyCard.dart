@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PharmacyCard extends StatelessWidget {
-    final Function openMapFunc;
+  final Function openMapFunc;
 
   const PharmacyCard({Key key, this.openMapFunc}) : super(key: key);
 
@@ -16,7 +16,7 @@ class PharmacyCard extends StatelessWidget {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
-              onTap: (){
+              onTap: () {
                 openMapFunc("Pharmacies near me");
               },
               child: Container(

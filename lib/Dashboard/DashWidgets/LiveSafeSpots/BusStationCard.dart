@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BusStationCard extends StatelessWidget {
-    final Function openMapFunc;
+  final Function openMapFunc;
 
   const BusStationCard({Key key, this.openMapFunc}) : super(key: key);
 
@@ -16,7 +16,7 @@ class BusStationCard extends StatelessWidget {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
-              onTap: (){
+              onTap: () {
                 openMapFunc("Bus stops near me");
               },
               child: Container(
@@ -24,7 +24,7 @@ class BusStationCard extends StatelessWidget {
                   width: 50,
                   child: Center(
                       child: Image.asset(
-                    "assets/bus-stop.png",
+                    "assets/bus.png",
                     height: 32,
                   ))),
             ),

@@ -29,18 +29,20 @@ class FakeCall extends StatelessWidget {
                     end: Alignment.centerRight,
                     colors: [Colors.purple, Colors.blue])),
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(15.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CircleAvatar(
-                      backgroundColor: Colors.white.withOpacity(0.5),
-                      radius: 25,
-                      child: Center(
-                          child: Image.asset(
-                        "assets/call.png",
-                        height: 35,
-                      ))),
+                  Center(
+                    child: CircleAvatar(
+                        // backgroundColor: Colors.white.withOpacity(0.5),
+                        radius: 25,
+                        child: Center(
+                            child: Image.asset(
+                          "assets/calling.png",
+                          height: 35,
+                        ))),
+                  ),
                   Expanded(
                       child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

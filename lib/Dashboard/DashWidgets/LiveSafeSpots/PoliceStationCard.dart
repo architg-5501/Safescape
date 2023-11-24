@@ -15,7 +15,7 @@ class PoliceStationCard extends StatelessWidget {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
-              onTap: (){
+              onTap: () {
                 openMapFunc("Police Stations near me");
               },
               child: Container(
@@ -23,7 +23,7 @@ class PoliceStationCard extends StatelessWidget {
                   width: 50,
                   child: Center(
                       child: Image.asset(
-                    "assets/police-badge.png",
+                    "assets/police.png",
                     height: 32,
                   ))),
             ),

@@ -29,7 +29,7 @@ import 'package:safescape/Dashboard/DashWidgets/OtherFeature.dart';
 import 'package:safescape/Dashboard/DashWidgets/SafeHome.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../HiddenCamera/detection.dart';
+import '../sigerSound/detection.dart';
 
 class Home extends StatefulWidget {
   const Home({Key key}) : super(key: key);
@@ -51,16 +51,9 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     // _checkOpening();
-    initAlan();
+
     alertState = false;
     getRandomInt(false);
-  }
-
-  initAlan() {
-    AlanVoice.addButton(
-        "91ee9210fdb5953f9d7e240bf03560242e956eca572e1d8b807a3e2338fdd0dc/stage",
-        buttonAlign: AlanVoice.BUTTON_ALIGN_LEFT);
-    AlanVoice.callbacks.add((command) => _handleCommand(command.data));
   }
 
   _handleCommand(Map<String, dynamic> response) {
@@ -130,9 +123,7 @@ class _HomeState extends State<Home> {
         _openrl(
             "https://play.google.com/store/apps/details?id=com.ubercab&gl=US");
         break;
-      case "disable":
-        AlanVoice.deactivate();
-        break;
+
       default:
         print("no match found");
         break;
@@ -184,96 +175,6 @@ class _HomeState extends State<Home> {
                     alignment: Alignment.topRight,
                     child: Text("See More", textAlign: TextAlign.end)),
               ),
-              // Text("${batteryPercentage}"),
-              // SizedBox(height: 1),
-              SizedBox(
-                height: MediaQuery.of(context).size.height / 6,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        if (alertState) {
-                          player.stop();
-                          setState(() {
-                            alertState = false;
-                          });
-                        } else {
-                          player.play(AssetSource('emergency.mp3'));
-                          setState(() {
-                            alertState = true;
-                          });
-                        }
-                      },
-                      child: AvatarGlow(
-                        glowColor: Colors.redAccent[700],
-                        endRadius: 90.0,
-                        duration: Duration(milliseconds: 2000),
-                        repeat: true,
-                        showTwoGlows: true,
-                        repeatPauseDuration: Duration(milliseconds: 100),
-                        child: Material(
-                          // Replace this child with your own
-                          elevation: 8.0,
-                          shape: CircleBorder(),
-                          child: CircleAvatar(
-                            backgroundColor: Colors.redAccent[100],
-                            child: Image.asset(
-                              'assets/siren.png',
-                              height: 60,
-                            ),
-                            radius: 40.0,
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                          padding: EdgeInsets.all(10),
-                          margin: EdgeInsets.only(left: 0),
-                          height: 60,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(20),
-                                bottomLeft: Radius.circular(20)),
-                            gradient: LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [
-                                Color(0xFFFD8080),
-                                Color(0xFFFB8580),
-                                Color(0xFFFBD079),
-                              ],
-                            ),
-                          ),
-                          width: MediaQuery.of(context).size.width / 1.8,
-                          // color: Colors.orange,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const [
-                              Icon(
-                                Icons.arrow_left,
-                                size: 37,
-                                color: Colors.white,
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(right: 42.0),
-                                child: Text(
-                                  "Danger Siren",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.right,
-                                ),
-                              ),
-                            ],
-                          )),
-                    ),
-                  ],
-                ),
-              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Row(
@@ -283,6 +184,63 @@ class _HomeState extends State<Home> {
                       children: const [
                         Padding(
                           padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            "Features",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 20),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              OtherFeature(),
+              SizedBox(
+                height: 12,
+              ),
+              // const Padding(
+              //   padding: EdgeInsets.only(left: 16.0, bottom: 10, top: 10),
+              //   child: Text(
+              //     "Book Cab",
+              //     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              //   ),
+              // ),
+
+              // const BookCab(),
+
+              Padding(
+                padding: const EdgeInsets.only(left: 16.0, bottom: 10, top: 10),
+                child: Text(
+                  "Explore LiveSafe",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+              ),
+              LiveSafe(),
+              SizedBox(
+                height: 15,
+              ),
+              //SafePath Map routing
+              Safepath(),
+
+              Padding(
+                padding: const EdgeInsets.only(left: 16.0, bottom: 10, top: 15),
+                child: Text(
+                  "Be Empowered With",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+              ),
+              Scream(),
+              SafeHome(),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
                           child: Text(
                             "Emergency",
                             style: TextStyle(
@@ -295,56 +253,6 @@ class _HomeState extends State<Home> {
                 ),
               ),
               const Emergency(),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            "Other Features",
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 20),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              OtherFeature(),
-           
-              const Padding(
-                padding: EdgeInsets.only(left: 16.0, bottom: 10, top: 10),
-                child: Text(
-                  "Book Cab",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-              ),
-
-              const BookCab(),
-
-              Padding(
-                padding: const EdgeInsets.only(left: 16.0, bottom: 10, top: 10),
-                child: Text(
-                  "Explore LiveSafe",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-              ),
-              LiveSafe(),
-              Safepath(),
-              Padding(
-                padding: const EdgeInsets.only(left: 16.0, bottom: 10, top: 10),
-                child: Text(
-                  "Be Nirbhaya With",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-              ),
-              Scream(),
-              SafeHome(),
               SwipeButtonDemo(
                 pageRoute: "/fifth",
                 buttonTitle: "Swipe to report incident",
@@ -374,7 +282,6 @@ class _HomeState extends State<Home> {
           Navigator.pop(context);
         }).show(context);
   }
-
 
   openMap(String location) async {
     String googleUrl =

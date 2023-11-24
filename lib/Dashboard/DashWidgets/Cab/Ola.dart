@@ -2,7 +2,7 @@ import 'package:android_intent_plus/android_intent.dart';
 import 'package:device_apps/device_apps.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:safescape/HiddenCamera/detection.dart';
+import 'package:safescape/sigerSound/detection.dart';
 
 import '../../../Fake call/fake.dart';
 import '../../../Fake call/fake_call_support.dart';
