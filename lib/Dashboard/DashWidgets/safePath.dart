@@ -96,7 +96,8 @@ class Safepath extends StatelessWidget {
 }
 
 Future<void> openMap() async {
-  String googleUrl = 'https://maps-swart.vercel.app/';
+  // String googleUrl = 'https://maps-swart.vercel.app/';
+  String googleUrl = 'https://safescape-journey.vercel.app/';
 
   try {
     await launch(googleUrl);
