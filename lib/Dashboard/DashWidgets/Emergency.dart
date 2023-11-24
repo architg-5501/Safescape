@@ -17,10 +17,10 @@ class Emergency extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         children: [
-          WomenDistress(),
           PoliceEmergency(),
           MetroEmergency(),
           AmbulanceEmergency(),
+          WomenDistress(),
           FireEmergency()
         ],
       ),

@@ -16,7 +16,6 @@ class SwipeButtonDemo extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
 
-    
     return Column(
       children: <Widget>[
         Container(
@@ -31,7 +30,7 @@ class SwipeButtonDemo extends StatelessWidget {
                       widthFactor: 0.90,
                       child: Icon(
                         Icons.chevron_right,
-                        size: 50.0,
+                        size: 40.0,
                         color: Colors.white,
                       )),
                 ],
@@ -41,7 +40,9 @@ class SwipeButtonDemo extends StatelessWidget {
                   'Report to NCW cell',
                   style: TextStyle(
                     color: Colors.white,
+                    fontFamily: 'Roboto',
                     fontSize: MediaQuery.of(context).size.width * 0.043,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),

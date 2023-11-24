@@ -26,9 +26,9 @@ class WomenDistress extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Color(0xFFFD8080),
-                  Color(0xFFFB8580),
-                  Color(0xFFFBD079),
+                  Color.fromARGB(255, 153, 222, 111),
+                  Color.fromARGB(255, 155, 217, 222),
+                  Color.fromARGB(255, 225, 164, 187),
                 ],
               ),
             ),
@@ -42,47 +42,47 @@ class WomenDistress extends StatelessWidget {
                       radius: 25,
                       child: Center(
                           child: Image.asset(
-                            "assets/women.png",
-                            height: 35,
-                          ))),
+                        "assets/medical.png",
+                        height: 35,
+                      ))),
                   Expanded(
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Women Distress",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: MediaQuery.of(context).size.width * 0.06),
-                          ),
-                          Text(
-                            "Tap to call women safety helpline",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize:
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Women Distress",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: MediaQuery.of(context).size.width * 0.06),
+                      ),
+                      Text(
+                        "Tap to call women safety helpline",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize:
                                 MediaQuery.of(context).size.width * 0.035),
-                            overflow: TextOverflow.ellipsis,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      Container(
+                        height: 30,
+                        width: 90,
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(300)),
+                        child: Center(
+                          child: Text(
+                            "1 -0 -9 -1",
+                            style: TextStyle(
+                                color: Color.fromARGB(255, 207, 173, 237),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18),
                           ),
-                          Container(
-                            height: 30,
-                            width: 90,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(300)),
-                            child: Center(
-                              child: Text(
-                                "1 -0 -9 -1",
-                                style: TextStyle(
-                                    color: Colors.red[300],
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18),
-                              ),
-                            ),
-                          ),
-                        ],
-                      )),
+                        ),
+                      ),
+                    ],
+                  )),
                 ],
               ),
             ),
@@ -92,7 +92,7 @@ class WomenDistress extends StatelessWidget {
     );
   }
 
-    _callNumber(number) async {
-      await FlutterPhoneDirectCaller.callNumber(number);
-    }
+  _callNumber(number) async {
+    await FlutterPhoneDirectCaller.callNumber(number);
+  }
 }

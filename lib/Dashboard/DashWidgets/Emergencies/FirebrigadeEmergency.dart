@@ -26,9 +26,9 @@ class FireEmergency extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Color(0xFFFD8080),
-                  Color(0xFFFB8580),
-                  Color(0xFFFBD079),
+                  Color.fromARGB(255, 153, 222, 111),
+                  Color.fromARGB(255, 155, 217, 222),
+                  Color.fromARGB(255, 225, 164, 187),
                 ],
               ),
             ),
@@ -42,7 +42,7 @@ class FireEmergency extends StatelessWidget {
                       radius: 25,
                       child: Center(
                           child: Image.asset(
-                        "assets/flame.png",
+                        "assets/fire_truck.png",
                         height: 35,
                       ))),
                   Expanded(
@@ -76,7 +76,7 @@ class FireEmergency extends StatelessWidget {
                             child: Text(
                               "1 -0 -1",
                               style: TextStyle(
-                                  color: Colors.red[300],
+                                  color: Color.fromARGB(255, 207, 173, 237),
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18),
                             ),

@@ -268,20 +268,20 @@ class _HomeState extends State<Home> {
     );
   }
 
-  void showLocAlert(BuildContext context) {
-    Blurry(
-        title: 'Arm - Hands Free',
-        barrierColor: Colors.pink.shade200,
-        // layoutType: LayoutType.center,
-        description:
-            'We have provided you a personalized coversational AI to automate your interactions and provide personalized experience',
-        icon: Icons.adjust_rounded,
-        popupHeight: MediaQuery.of(context).size.height / 3.1,
-        confirmButtonText: 'OK',
-        onConfirmButtonPressed: () {
-          Navigator.pop(context);
-        }).show(context);
-  }
+  // void showLocAlert(BuildContext context) {
+  //   Blurry(
+  //       title: 'Arm - Hands Free',
+  //       barrierColor: Colors.pink.shade200,
+  //       // layoutType: LayoutType.center,
+  //       description:
+  //           'We have provided you a personalized coversational AI to automate your interactions and provide personalized experience',
+  //       icon: Icons.adjust_rounded,
+  //       popupHeight: MediaQuery.of(context).size.height / 3.1,
+  //       confirmButtonText: 'OK',
+  //       onConfirmButtonPressed: () {
+  //         Navigator.pop(context);
+  //       }).show(context);
+  // }
 
   openMap(String location) async {
     String googleUrl =

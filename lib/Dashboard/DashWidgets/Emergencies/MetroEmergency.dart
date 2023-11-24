@@ -26,9 +26,9 @@ class MetroEmergency extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Color.fromARGB(255, 236, 104, 104),
-                  Color(0xFFFB8580),
-                  Color(0xFFFBD079),
+                  Color.fromARGB(255, 153, 222, 111),
+                  Color.fromARGB(255, 155, 217, 222),
+                  Color.fromARGB(255, 225, 164, 187),
                 ],
               ),
             ),
@@ -75,7 +75,7 @@ class MetroEmergency extends StatelessWidget {
                           child: Text(
                             "2 -2 -1 -8 -5 -5 -5 -5",
                             style: TextStyle(
-                                color: Colors.red[300],
+                                color: Color.fromARGB(255, 207, 173, 237),
                                 fontWeight: FontWeight.bold,
                                 fontSize: 18),
                           ),
