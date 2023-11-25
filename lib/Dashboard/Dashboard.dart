@@ -165,8 +165,8 @@ class _DashboardState extends State<Dashboard> {
                     MaterialPageRoute(builder: (context) => PhoneBook()));
               },
               child: Image.asset(
-                "assets/add-contact.png",
-                height: 60,
+                "assets/add.png",
+                height: 35,
               ),
             )
           : FloatingActionButton(
@@ -189,17 +189,13 @@ class _DashboardState extends State<Dashboard> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Image.asset(
-                          "assets/alarm.png",
-                          height: 24,
+                          "assets/stop1.png",
+                          height: 35,
                         ),
-                        Text(
-                          "STOP",
-                          style: TextStyle(color: Colors.black),
-                        )
                       ],
                     )
                   : Image.asset(
-                      "assets/icons/sos_icon1.png",
+                      "assets/sos1.png",
                       height: 36,
                     ),
             ),
@@ -220,8 +216,8 @@ class _DashboardState extends State<Dashboard> {
                       });
                   },
                   child: Image.asset(
-                    "assets/home.png",
-                    height: 28,
+                    "assets/home2.png",
+                    height: 32,
                   )),
               InkWell(
                   onTap: () {
@@ -230,7 +226,7 @@ class _DashboardState extends State<Dashboard> {
                         currentPage = 1;
                       });
                   },
-                  child: Image.asset("assets/phone_red.png", height: 28)),
+                  child: Image.asset("assets/call1.png", height: 32)),
             ],
           ),
         ),

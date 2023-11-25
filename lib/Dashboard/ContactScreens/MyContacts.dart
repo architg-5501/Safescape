@@ -16,18 +16,15 @@ class _MyContactsScreenState extends State<MyContactsScreen> {
     return Scaffold(
       backgroundColor: Color(0xFFFAFCFE),
       appBar: AppBar(
-          centerTitle: true,
-          elevation: 0,
-          title: Text(
-            "SOS Contacts",
-            style: TextStyle(
-                fontSize: 26, fontWeight: FontWeight.w900, color: Colors.black),
-          ),
-          backgroundColor: Colors.transparent,
-          leading: IconButton(
-            icon: Image.asset("assets/phone_red.png"),
-            onPressed: () {},
-          )),
+        centerTitle: true,
+        elevation: 0,
+        title: Text(
+          "SOS Contacts",
+          style: TextStyle(
+              fontSize: 26, fontWeight: FontWeight.w900, color: Colors.black),
+        ),
+        backgroundColor: Colors.transparent,
+      ),
       body: FutureBuilder(
           future: checkforContacts(),
           builder: (context, AsyncSnapshot<List<String>> snap) {

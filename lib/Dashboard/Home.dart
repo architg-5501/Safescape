@@ -246,8 +246,8 @@ class _HomeState extends State<Home> {
                 buttonTitle: "Swipe to report incident",
               ),
               Image.asset(
-                "assets/bk_women.png",
-                height: MediaQuery.of(context).size.height / 7,
+                "assets/womans.png",
+                height: MediaQuery.of(context).size.height / 6,
               ),
             ],
           ),

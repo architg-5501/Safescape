@@ -26,9 +26,9 @@ class AmbulanceEmergency extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Color.fromARGB(255, 153, 222, 111),
-                  Color.fromARGB(255, 155, 217, 222),
-                  Color.fromARGB(255, 225, 164, 187),
+                  Color.fromARGB(255, 231, 176, 228),
+                  Color.fromARGB(255, 146, 183, 217),
+                  Color.fromARGB(255, 229, 233, 145),
                 ],
               ),
             ),

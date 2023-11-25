@@ -26,9 +26,12 @@ class PoliceEmergency extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Color.fromARGB(255, 153, 222, 111),
-                  Color.fromARGB(255, 155, 217, 222),
-                  Color.fromARGB(255, 225, 164, 187),
+                  // Color.fromARGB(255, 153, 222, 111),
+                  // Color.fromARGB(255, 155, 217, 222),
+                  // Color.fromARGB(255, 225, 164, 187),
+                  Color.fromARGB(255, 231, 176, 228),
+                  Color.fromARGB(255, 146, 183, 217),
+                  Color.fromARGB(255, 229, 233, 145),
                 ],
               ),
             ),
@@ -76,7 +79,7 @@ class PoliceEmergency extends StatelessWidget {
                             child: Text(
                               "1 -1 -2",
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 207, 173, 237),
+                                  color: Color.fromARGB(255, 189, 132, 239),
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18),
                             ),
