@@ -19,7 +19,7 @@ class Safepath extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      padding: const EdgeInsets.all(10.0),
       child: Container(
           padding: EdgeInsets.all(15),
           width: MediaQuery.of(context).size.width,

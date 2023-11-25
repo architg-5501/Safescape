@@ -6,16 +6,16 @@ List<List<String>> sweetSayings = [
 ];
 
 List<String> articleTitle = [
-  "Indian women: Role models for the nation",
-  "Together, we can end violence",
-  "Become the change you wish to see",
-  "You are stronger than you believe"
+  "Exemplary Indian Women: Inspirational Figures for the Nation",
+  "Ending Violence Together: A Shared Commitment",
+  "Transform Yourself into the Change You Want to Witness",
+  "Discover the Strength Within You, It Surpasses Belief"
 ];
 List<String> imageSliders = [
-  "https://www.yourtango.com/sites/default/files/styles/header_slider/public/image_blog/songs-about-strong-women.jpg?itok=nmfiF3J3",
-  "https://media.istockphoto.com/vectors/young-woman-looks-at-the-mirror-and-sees-her-happy-reflection-vector-id1278815846?k=20&m=1278815846&s=612x612&w=0&h=JUTmV9Of-_ILOfXBfV9Cmp_41yuTliSdFIcZy5LKuss=",
-  "https://media.istockphoto.com/vectors/mental-health-or-psychology-concept-with-flowering-human-head-vector-id1268669581?k=20&m=1268669581&s=612x612&w=0&h=YVLTKCZXKugEn40aqOkir4vcoFeTUAQToa1i3AFYRNU=",
-  "https://media.istockphoto.com/photos/confidence-and-strength-concept-picture-id1086700012?k=20&m=1086700012&s=612x612&w=0&h=1wWVN3AB7BH7o3y2A2b-NG3HB9H6Dwkc9OLz2lxgwAY=",
+  "https://img.freepik.com/free-vector/flat-women-hands-with-feminism-fists-raised-up_88138-827.jpg?w=1380&t=st=1700871043~exp=1700871643~hmac=5a66c15c779782ff05f62a8993186c113a28c5cf2ad5b4a91238b122428a7fbf",
+  "https://img.freepik.com/free-vector/hand-drawn-flat-international-day-elimination-violence-against-women-background_23-2149120937.jpg?w=1060&t=st=1700871318~exp=1700871918~hmac=024ad16ad8bf24b1ed67cf753bbd2563dd1ae6c0a99ede2b3825c0e15fc26f4a",
+  "https://img.freepik.com/free-vector/flat-background-international-women-s-day_23-2150145208.jpg?w=1060&t=st=1700871438~exp=1700872038~hmac=5072122d158b0c2df16cd289302b2ca89785bd2c668ad8016e6539655f047f3d",
+  "https://img.freepik.com/free-vector/gender-neutral-movement-concept_23-2148547016.jpg?w=1060&t=st=1700871587~exp=1700872187~hmac=14b1f838ee9c48abfce08814cabcebf05732a459ce5588885bf6d3502ae86787",
 ];
 
 List<List<String>> articles = [

@@ -62,20 +62,7 @@ class _HomeState extends State<Home> {
         Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => Fake()));
         break;
-      case "siren":
-        if (alertState) {
-          player.stop();
-          setState(() {
-            alertState = false;
-          });
-        } else {
-          player.play(AssetSource('emergency.mp3'));
-          setState(() {
-            alertState = true;
-          });
-        }
-        // Get.back();
-        break;
+
       case "alert":
         // setState(() {divi
         // bgColor = Colors.yellow;
@@ -161,20 +148,8 @@ class _HomeState extends State<Home> {
           child: ListView(
             shrinkWrap: true,
             children: [
-              SafeCarousel(),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => AllArticles(),
-                    ),
-                  );
-                },
-                child: Align(
-                    alignment: Alignment.topRight,
-                    child: Text("See More", textAlign: TextAlign.end)),
-              ),
+              Safepath(),
+
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Row(
@@ -221,7 +196,20 @@ class _HomeState extends State<Home> {
                 height: 15,
               ),
               //SafePath Map routing
-              Safepath(),
+              SafeCarousel(),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AllArticles(),
+                    ),
+                  );
+                },
+                child: Align(
+                    alignment: Alignment.topRight,
+                    child: Text("See More", textAlign: TextAlign.end)),
+              ),
 
               Padding(
                 padding: const EdgeInsets.only(left: 16.0, bottom: 10, top: 15),
