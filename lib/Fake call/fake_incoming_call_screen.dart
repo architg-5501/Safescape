@@ -11,12 +11,11 @@ class FakeCallScreen extends StatefulWidget {
   FakeCallScreen();
 
   @override
-  _FakeCallScreenState createState() =>
-      _FakeCallScreenState();
+  _FakeCallScreenState createState() => _FakeCallScreenState();
 }
 
 class _FakeCallScreenState extends State<FakeCallScreen> {
-  String fakeCallerName="divij";
+  String fakeCallerName = "divij";
 
   // _FakeCallScreenState({@required this.fakeCallerName});
 
@@ -70,8 +69,7 @@ class _FakeCallScreenState extends State<FakeCallScreen> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: ExactAssetImage('assets/fakeCallBG.jpg'),
-              fit: BoxFit.cover),
+              image: ExactAssetImage('assets/indian.png'), fit: BoxFit.cover),
         ),
         child: Column(
           children: <Widget>[

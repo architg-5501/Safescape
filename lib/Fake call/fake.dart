@@ -176,11 +176,7 @@ class _FakeState extends State<Fake> {
                           gradient: LinearGradient(
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
-                            colors: [
-                              Color(0xFFFD8080),
-                              Color(0xFFFB8580),
-                              Color(0xFFFBD079),
-                            ],
+                            colors: [Colors.purple, Colors.blue],
                           ),
                         ),
                         // width: MediaQuery.of(context).size.width/1.8,
@@ -211,11 +207,7 @@ class _FakeState extends State<Fake> {
                           gradient: LinearGradient(
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
-                            colors: [
-                              Color(0xFFFD8080),
-                              Color(0xFFFB8580),
-                              Color(0xFFFBD079),
-                            ],
+                            colors: [Colors.purple, Colors.blue],
                           ),
                         ),
                         // width: MediaQuery.of(context).size.width/1.8,
@@ -245,11 +237,7 @@ class _FakeState extends State<Fake> {
                           gradient: LinearGradient(
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
-                            colors: [
-                              Color(0xFFFD8080),
-                              Color(0xFFFB8580),
-                              Color(0xFFFBD079),
-                            ],
+                            colors: [Colors.purple, Colors.blue],
                           ),
                         ),
                         // width: MediaQuery.of(context).size.width/1.8,
@@ -279,11 +267,7 @@ class _FakeState extends State<Fake> {
                           gradient: LinearGradient(
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
-                            colors: [
-                              Color(0xFFFD8080),
-                              Color(0xFFFB8580),
-                              Color(0xFFFBD079),
-                            ],
+                            colors: [Colors.purple, Colors.blue],
                           ),
                         ),
                         // width: MediaQuery.of(context).size.width/1.8,
@@ -300,7 +284,7 @@ class _FakeState extends State<Fake> {
                         ),
                       ),
                     ),
-                    Image.asset("assets/bk_women.png",
+                    Image.asset("assets/womans.png",
                         height: MediaQuery.of(context).size.height / 5,
                         alignment: AlignmentDirectional.bottomCenter),
                   ],
