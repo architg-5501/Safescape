@@ -13,7 +13,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:safescape/Dashboard/ContactScreens/phonebook_view.dart';
 import 'package:safescape/Dashboard/DashWidgets/Scream.dart';
-import 'package:safescape/Dashboard/DashWidgets/safePath.dart';
+import 'package:safescape/Dashboard/DashWidgets/SafePath.dart';
+import 'package:safescape/Dashboard/DashWidgets/Shake.dart';
 import 'package:safescape/Dashboard/Dashboard.dart';
 import 'package:safescape/Dashboard/Settings/SettingsScreen.dart';
 import 'package:safescape/Fake%20call/fake.dart';
@@ -210,7 +211,6 @@ class _HomeState extends State<Home> {
                     alignment: Alignment.topRight,
                     child: Text("See More", textAlign: TextAlign.end)),
               ),
-
               Padding(
                 padding: const EdgeInsets.only(left: 16.0, bottom: 10, top: 15),
                 child: Text(
@@ -220,6 +220,7 @@ class _HomeState extends State<Home> {
               ),
               Scream(),
               SafeHome(),
+              Shake(),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Row(
